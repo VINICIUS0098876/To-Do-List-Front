@@ -34,6 +34,7 @@ const Register: React.FC = () => {
                 return;
             }
 
+
             navigate('/');
 
             console.log('Registro bem-sucedido:', data);
@@ -57,21 +58,21 @@ const Register: React.FC = () => {
                       placeholder="Nome"
                       value={name_user}
                       onChange={(e) => setNome(e.target.value)}
-                      required
+                    //  required
                     />
                     <input
                       type="email"
                       placeholder="E-mail"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      required
+                     // required
                     />
                     <input
                       type="password"
                       placeholder="Senha"
                       value={password_hash}
                       onChange={(e) => setPassword(e.target.value)}
-                      required
+                    //   required
                     />
                     {error && <p className="error">{error}</p>}
                     <button type="submit">Cadastrar</button>

@@ -114,3 +114,12 @@ a{
 p a:hover{
 color: #4f46e5;
 }
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+

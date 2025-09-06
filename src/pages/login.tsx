@@ -31,13 +31,15 @@
                     return
                 }
 
-                localStorage.setItem('token', data.token)
+                localStorage.setItem('token', data.Login.token)
+                localStorage.setItem('name_user', data.Login.user.name_user)
+                localStorage.setItem('id_user', data.Login.user.id_user.toString())
 
                 navigate('/home')
 
                 console.log('Login bem-sucedido:', data);
 
-            } catch (error) {
+            } catch (error  ) {
                 setError('Erro ao fazer login. Tente novamente.'); 
             }
 
